@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var animal_repository_1 = require("./entitys/animal-repository");
+var animal_1 = require("./models/animal");
+var animalRepo = new animal_repository_1.AnimalRepository();
+animalRepo.create(new animal_1.Animals('Tiger', 5, 'Orange'));
+animalRepo.create(new animal_1.Animals('Loin', 8, 'Gold-yellow'));
+console.log(animalRepo);
+var list = animalRepo.getList();
+console.log(list);
